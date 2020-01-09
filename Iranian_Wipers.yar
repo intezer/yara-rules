@@ -100,7 +100,7 @@ rule Intezer_Iranian_Wipers
 {
 	meta:
 		copyright = "Intezer Labs"
-		description = "Automatic YARA vaccination rule created based on the file's genes"
+		description = "Shamoon, ZeroCleare and Dustman"
 		author = "Intezer Labs"
 		reference = "https://analyze.intezer.com"
 		date = "2020-01-09"
