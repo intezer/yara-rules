@@ -2,7 +2,6 @@ rule Lazarus_2020
 {
 	meta:
 		copyright = "Intezer Labs"
-		description = "Automatic YARA vaccination rule created based on the file's genes"
 		author = "Intezer Labs"
 		reference = "https://analyze.intezer.com"
 		date = "2020-06-11"
