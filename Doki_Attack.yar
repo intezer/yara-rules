@@ -8,5 +8,5 @@ rule Doki_Attack
         $s2 = /echo \\{3}\"(\*\s){4}\* root sh \/tmp\/tmp\w*\\{3}\" \\{2}u003e\/tmp\w{6}\/etc\/crontab;/ nocase
         $s3 = /chroot \/tmp\w{6} sh -c \\{3}\"cron \|\| crond/ nocase
     condition:
-       ($a1 and $a2) and ($s1 and $s2 and $s3)
+       all of them
 }
