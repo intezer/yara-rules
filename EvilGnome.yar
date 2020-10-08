@@ -1,4 +1,9 @@
 private rule EvilGnomeDevStrings {
+	meta:
+		copyright = "Intezer Labs"
+		author = "Intezer Labs"
+		reference = "https://www.intezer.com"
+		
 	strings:
 		$s1 = "/media/data/work/Rostov"
 		$s2 = "spy/spy-source/spy-agent"
@@ -9,6 +14,10 @@ private rule EvilGnomeDevStrings {
 }
 
 private rule EvilGnomeRC5Key {
+	meta:
+		copyright = "Intezer Labs"
+		author = "Intezer Labs"
+		reference = "https://www.intezer.com"
     strings:
         $k1 = "sdg62_AS.sa$die3"
     condition:
@@ -31,6 +40,10 @@ private rule EvilGnomeIntezerVaccine
 
 rule EvilGnomeYara
 {
+	meta:
+		copyright = "Intezer Labs"
+		author = "Intezer Labs"
+		reference = "https://www.intezer.com"
 	condition:
 		EvilGnomeRC5Key or EvilGnomeDevStrings or EvilGnomeIntezerVaccine
 }
