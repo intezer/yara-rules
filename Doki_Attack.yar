@@ -1,5 +1,10 @@
 rule Doki_Attack
 {
+	meta:
+		copyright = "Intezer Labs"
+		author = "Intezer Labs"
+		reference = "https://www.intezer.com"
+        
     strings:
     
         $a1 = /curl --retry 3 -m 60 -o \/tmp\w{6}\/tmp\/tmp.{37}.*\\{3}\"http:\/{2}.*\.ngrok\.io[\s\S]*\\{3}\";/ nocase
