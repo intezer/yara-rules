@@ -1,8 +1,9 @@
 rule QnapCrypt
 {	
-    meta: 
-	author = "Intezer"
-	date = "10-06-2019"
+	meta:
+		copyright = "Intezer Labs"
+		author = "Intezer Labs"
+		reference = "https://www.intezer.com"
 	
     strings:
         $a = "Do NOT remove this file and NOT remove last line in this file!" nocase
