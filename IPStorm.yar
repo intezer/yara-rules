@@ -1,8 +1,9 @@
 rule IPStorm
 {
 	meta:
-		author = "Intezer"
-		date = "2020-10-01"
+		copyright = "Intezer Labs"
+		author = "Intezer Labs"
+		reference = "https://www.intezer.com"
 	strings:
 		$package1 = "storm/backshell"
 		$package2 = "storm/filetransfer"
