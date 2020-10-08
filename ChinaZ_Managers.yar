@@ -1,6 +1,8 @@
 private rule NewManager {
 	meta:
-		author = "IntezerLabs"
+		copyright = "Intezer Labs"
+		author = "Intezer Labs"
+		reference = "https://www.intezer.com"
 	strings:
 		$a0 = {8B ?? 04 3? 03 00 00 11 74 4D 3? 11 00 00 11 74 61 3? 02 00 00 11 } 
         $b0 = "_ConnectServer"
@@ -16,7 +18,9 @@ private rule NewManager {
 
 private rule AmpManager {
 	meta:
-		author = "IntezerLabs"
+		copyright = "Intezer Labs"
+		author = "Intezer Labs"
+		reference = "https://www.intezer.com"
 	strings:
 		$a0 = {C7 85 ?? F8 FF FF ?? 00 00 11 C7 85 ?? F8 FF FF 00 00 00 00 C7 85 ?? F8 FF FF ?? 00 00 00} 
         $b0 = "ampserver/main.cpp"
@@ -31,7 +35,9 @@ private rule AmpManager {
 
 private rule DDoSManager { 
 	meta:
-		author = "IntezerLabs"
+		copyright = "Intezer Labs"
+		author = "Intezer Labs"
+		reference = "https://www.intezer.com"
 	strings:
 		$a0 = { 55 89 e5 5? 8b ?? 0c 8B ?? 08 85 ?? 7E 16 31 ?? 0F B6 ?? ?? 83 F? 19 83 C? 7A 88 ?? ?? 83 C? 01} 
         $b0 = "5CFake"
@@ -46,7 +52,9 @@ private rule DDoSManager {
 
 rule ChinaZ_Managers {
 	meta:
-		author = "IntezerLabs"
+		copyright = "Intezer Labs"
+		author = "Intezer Labs"
+		reference = "https://www.intezer.com"
 	condition:
         NewManager or AmpManager or DDoSManager
 }
