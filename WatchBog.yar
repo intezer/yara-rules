@@ -1,8 +1,9 @@
 rule WatchBog_Cython
 {	
-    meta: 
-	author = "Intezer"
-	date = "24-07-2019"
+	meta:
+		copyright = "Intezer Labs"
+		author = "Intezer Labs"
+		reference = "https://www.intezer.com"
 	
     strings:
 	$a0 = "/tmp/.parttttzone"
