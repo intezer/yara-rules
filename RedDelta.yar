@@ -5,10 +5,10 @@ rule RedDelta_loader
 		author = "Intezer Labs"
 		reference = "https://www.intezer.com"
 	strings:
-        $str1 = "DotNetLoader"
-        $str2 = "clipboardinject"
-        $str3 = "InjectShellCode"
-        $str4 = "WMIBackdoor"
+        	$str1 = "DotNetLoader"
+        	$str2 = "clipboardinject"
+        	$str3 = "InjectShellCode"
+        	$str4 = "WMIBackdoor"
 	condition:
 		3 of them
 }
@@ -46,12 +46,12 @@ rule RedDelta_c2
 		reference = "https://www.intezer.com"
 	strings:
 		$str1 = "update.flach.cn"
-        $str2 = "update.flach.com.cn"
-        $str3 = "aHR0cDovL3VwZGF0ZS5mbGFjaC5jbg=="
-        $str4 = "www.flach.cn"
-        $str5 = "159.138.84.217"
-        $str6 = "update.careerhuawei.net"
-        $str7 = "aHR0cDovL3VwZGF0ZS5jYXJlZXJodWF3ZWkubmV0Ojgx"
+        	$str2 = "update.flach.com.cn"
+        	$str3 = "aHR0cDovL3VwZGF0ZS5mbGFjaC5jbg=="
+        	$str4 = "www.flach.cn"
+        	$str5 = "159.138.84.217"
+        	$str6 = "update.careerhuawei.net"
+        	$str7 = "aHR0cDovL3VwZGF0ZS5jYXJlZXJodWF3ZWkubmV0Ojgx"
 
 	condition:
 		any of them
