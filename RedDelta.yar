@@ -52,6 +52,7 @@ rule RedDelta_c2
         	$str5 = "159.138.84.217"
         	$str6 = "update.careerhuawei.net"
         	$str7 = "aHR0cDovL3VwZGF0ZS5jYXJlZXJodWF3ZWkubmV0Ojgx"
+		$str8 = "update1.jscachecdn.com"
 
 	condition:
 		any of them
