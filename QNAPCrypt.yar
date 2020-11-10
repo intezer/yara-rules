@@ -15,5 +15,5 @@ rule QnapCrypt
         $b5 = "main.randSeq"
         $b6 = "main.encrypt"
     condition:
-        $a or any of ($b*)
+        $a or 2 of ($b*)
 }
