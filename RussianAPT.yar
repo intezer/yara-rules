@@ -1,16 +1,5 @@
 import "hash"
 
-private global rule MZOnly {
-    strings:
-        $mz = "MZ"
-    condition:
-        $mz at 0
-}
-
-private global rule FileSize {
-    condition:
-        filesize < 1MB
-}
 rule Karagany {
 	meta:
 		Author = "Intezer Analyze"
