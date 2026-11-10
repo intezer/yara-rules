@@ -6287,7 +6287,7 @@ rule CarbonOrchestrator_v3_81_ {
 		hash.sha256(0, filesize) == "e82d4b6d037568a4602e70f099005572b587c220793afd8f90c13cb7bbde61ed" or
 		hash.sha256(0, filesize) == "d1ad698567b04ea5ce8197c0316444ad8ee0350b46e0414f53f54c278b393a19" or
 		hash.sha256(0, filesize) == "7fa4482bfbca550ce296d8e791b1091d60d733ea8042167fd0eb853530584452" or
-		24 of them
+		(uint16(0) == 0x5A4D and filesize < 2MB and 50 of them)
 }
 
 rule CarbonCommunicationLibrary_v4_00_ {
@@ -6837,7 +6837,7 @@ rule CarbonOrchestrator_v3_77_ {
 
 	condition:
 		hash.sha256(0, filesize) == "af0e455f640b621c50d5c11efc3c8649691a9a661fa1bcf658aae48c007ff3c4" or
-		24 of them
+		(uint16(0) == 0x5A4D and filesize < 2MB and 42 of them)
 }
 
 rule MosquitoBackdoor {
@@ -7246,7 +7246,7 @@ rule CarbonOrchestrator_v3_79_ {
 
 	condition:
 		hash.sha256(0, filesize) == "9184be433426f5c9fe8ce27e8df89d7849c6af61779a3835c89ad46815abe839" or
-		24 of them
+		(uint16(0) == 0x5A4D and filesize < 2MB and 42 of them)
 }
 
 rule UroburosCVE20083431 {
